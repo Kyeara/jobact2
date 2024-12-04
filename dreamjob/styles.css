@@ -1,0 +1,162 @@
+
+body, h1, h2, h3, p, table, form, input, select {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #34495e;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+input[type="submit"][value="EDIT"],
+input[type="submit"][value="DELETE"] {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+input[type="submit"][value="EDIT"] {
+    background-color: #3498db;
+    color: #fff;
+}
+
+input[type="submit"][value="DELETE"] {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+input[type="submit"][value="EDIT"]:hover {
+    background-color: #2980b9;
+}
+
+input[type="submit"][value="DELETE"]:hover {
+    background-color: #c0392b;
+}
+
+
+form[action="<?php echo $_SERVER['PHP_SELF'];?>"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form[action="<?php echo $_SERVER['PHP_SELF'];?>"] input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form[action="<?php echo $_SERVER['PHP_SELF'];?>"] input[type="submit"] {
+    flex: 0 0 auto;
+    padding: 10px 15px;
+}
+
+
+input[type="submit"][value="Submit New Applicant"] {
+    display: block;
+    margin: 20px auto;
+    background-color: #16a085;
+}
+
+input[type="submit"][value="Submit New Applicant"]:hover {
+    background-color: #1abc9c;
+}
+
+
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
